@@ -1,0 +1,304 @@
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;  
+    font-family: 'Itim', cursive;
+}
+
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+
+
+i{
+    color: #fff;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    clip-path: polygon(100% 0%, 100% 100%,100% 100%,0 100%,0 0);
+    position: relative;
+}
+
+.header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+}
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    
+}
+
+.nav-item a{
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.bottom-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: white;
+}
+
+
+/* ************************** Project ***************************** */
+
+.project{
+    width: 100%;
+    height: 100vh;
+    margin: 60px 0;
+    text-align: center;
+}
+
+.extra-div{
+    background: #fff;
+    border: medium none;
+    padding: 50px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+.project i{
+    color: #606060;
+}
+
+.headings{
+    text-align: left;
+    font-size: 50px;
+    font-weight: 600;
+    color: #000;
+    margin-left: 100px;
+    padding: 0;
+}
+
+
+/* ******************************************** Technology ********************************** */
+
+
+.technology{
+    background: #f7f7f9;
+    padding: 80px 0;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 85vh;
+}
+
+.technologytitle{
+    margin-bottom: 50px;
+}
+
+.technologytitle{
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center !important;
+}
+
+.names h1{
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.progress{
+    height: 0.8rem !important;
+    margin-bottom: 25px !important;
+}
+
+
+
+/* ************************************** ABout me ********************************* */
+
+
+.aboutmetitle{
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-left: 50px !important;
+}
+
+.about{
+    margin-top: 50px;  
+}
+
+.about img{
+    margin-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    height: 40vh;
+}
+
+.about a{
+    color: #000;
+}
+
+.abouttext h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+.top{
+    margin-top: 80px;
+}
+
+.resume-buttons a{
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 12px 35px;
+    outline: none;
+    color: rgb(224, 203, 14);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    background: #000;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.resume-buttons a:hover{
+    color: #50d1c0;
+    background: rgb(0, 11, 75);
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+
+.connect{
+    margin-top: 50px;
+    text-align: left !important;
+    font-size: 1.6rem;
+}
+
+.connect li{
+    text-align: left;
+}
+
+.footer-div li{
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+.footer-div i{
+    color: #000;
+    margin-right: 10px;
+}
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    background:#000;
+}
+
+.footersection p{
+    color: white;
+    font-size: 25px;
+}
+
+#myBtn{
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    border: none;
+    color: white;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background: #606060;
+}
+
+
+/* ****************************************************** Media ******************************************** */
+
+
+@media(max-width: 768px){
+    .technology{
+        height: auto;
+    }
+    
+    .project{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .about{
+        height: auto;
+    }
+
+    .resume-buttons{
+    margin-top: 20px !important;
+    }
+}
